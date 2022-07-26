@@ -1,19 +1,8 @@
 import {
-  Component,
-  OnInit,
-  Input,
-  ViewEncapsulation,
-  OnChanges,
-  SimpleChanges,
-  DoCheck,
-  AfterContentInit,
-  AfterContentChecked,
-  AfterViewInit,
-  AfterViewChecked,
-  OnDestroy,
-  ViewChild,
-  ElementRef,
-  ContentChild
+  Component, OnInit, Input, ViewEncapsulation, OnChanges,
+  SimpleChanges, DoCheck, AfterContentInit, AfterViewInit,
+  AfterContentChecked, AfterViewChecked, OnDestroy,
+  ViewChild, ElementRef, ContentChild
 } from '@angular/core';
 
 @Component({
@@ -23,13 +12,9 @@ import {
   encapsulation: ViewEncapsulation.Emulated // None, Native
 })
 export class ServerElementComponent implements
-  OnInit,
-  OnChanges,
-  DoCheck,
-  AfterContentInit,
-  AfterContentChecked,
-  AfterViewInit,
-  AfterViewChecked,
+  OnInit, OnChanges, DoCheck, AfterContentInit,
+  AfterContentChecked, AfterViewInit, AfterViewChecked,
+
   OnDestroy {
   @Input('srvElement') element: {type: string, name: string, content: string};
   @Input() name: string;
